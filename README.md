@@ -36,6 +36,13 @@ NotePlayer 是一个基于 ESP32 开发的简易音符播放器。它通过读�
 
 
 ---
+## 获取代码
+使用git克隆此仓库，以获取代码：
+```bash
+git clone https://github.com/jinyoudechina/Note_player
+```
+
+---
 
 ## 软件说明
 
@@ -44,7 +51,3 @@ NotePlayer 是一个基于 ESP32 开发的简易音符播放器。它通过读�
 - **Arduino IDE**：1.8.13
 - **ESP32 开发板包**：espressif/esp32
 - **编程语言**：Arduino C++
-
----
-
-除了这个自述文件是ai写的，别的都是我自己写的！
