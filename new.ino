@@ -1,11 +1,11 @@
 //copyright(c) jinyoudechina 2026 all rights reserved.
-const int dataPin = 23;
-const int clockPin = 18;
-const int latchPin = 5;
+const int dataPin = 23;  //数据引脚
+const int clockPin = 18;  //时钟引脚
+const int latchPin = 5;  //所存引脚
 const int dPin = 26;  //电位器引脚，用于调节音调
 const int fPin = 25;  //蜂鸣器引脚
 
-note_t noteList[] = {NOTE_C, NOTE_C, NOTE_D, NOTE_E, NOTE_F, NOTE_G, NOTE_A, NOTE_B};
+note_t noteList[] = {NOTE_C, NOTE_C, NOTE_D, NOTE_E, NOTE_F, NOTE_G, NOTE_A, NOTE_B};  //音符列表
 
 const byte number_font[] = {
   0xF9,  // 1
@@ -45,7 +45,7 @@ void setup() {
 void loop() {
   int Tone = (analogRead(dPin) / 170) + 1;  //将电位器旋转的角度映射为1~7，对应7个音符
   Serial.println(Tone);
-  display1(Tone);
+  display1(Tone);  //通过显示函数来在数码管上显示音符
   ledcWriteNote(0, noteList[Tone], 4);
   delay(50);
 }
