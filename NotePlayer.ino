@@ -1,4 +1,4 @@
-//copyright(c) jinyoudechina 2026 all rights reserved.
+/*copyright(c) jinyoudechina 2026 all rights reserved.*/
 const int dataPin = 23;  //数据引脚
 const int clockPin = 18;  //时钟引脚
 const int latchPin = 5;  //锁存引脚
